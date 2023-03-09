@@ -1,6 +1,6 @@
 {
-    "name": "firstapp",
-    "short_name": "firstapp",
+    "name": "flutter_books",
+    "short_name": "flutter_books",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

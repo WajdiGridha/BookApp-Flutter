@@ -1,28 +1,17 @@
+import 'package:flutter_books/pages/HomePage.dart';
 import 'package:flutter/material.dart';
-import 'package:firstapp/models/catalog.dart';
-import 'package:firstapp/widgets/itemWidget.dart';
 
 void main() {
-  // debugPaintSizeEnabled = true;
-  runApp(MyApp());
+  runApp(Main());
 }
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // TODO: implement build
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Book App"),
-        ),
-        body: ListView.builder(
-            itemCount: CatalogModel.items.length,
-            itemBuilder: (context, index) {
-              return ItemWidget(item: CatalogModel.items[index]);
-            }),
-      ),
+      home: HomePage(),
     );
   }
 }
